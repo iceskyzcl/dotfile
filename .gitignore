@@ -1,0 +1,9 @@
+*
+!/.bash_profile
+!.config/
+!.config/pip/
+!.config/pip/pip.conf
+!/.gitignore
+!/.vimrc
+!/.ycm_vimrc.py
+!/README.md

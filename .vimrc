@@ -6,11 +6,14 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.vim/plugged')
+Plug 'yianwillis/vimcdoc'           "VIM中文文档
+Plug 'SirVer/ultisnips'
+Plug 'iceskyzcl/vim-snippets'
 Plug 'Valloric/YouCompleteMe', { 'do': 'python3 install.py' }
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'tpope/vim-commentary'         "操作符gc 见`:h commentary`
 Plug 'tpope/vim-surround'           "操作符ys/ds/cs, 见`:h surround`
-Plug 'yianwillis/vimcdoc'           "VIM中文文档
+Plug 'tpope/vim-repeat'             "使用.重复surround等插件命令
 call plug#end()
 
 " vim-plug help
@@ -58,9 +61,10 @@ set foldmethod=indent               "光标在缩进下方时用za命令折叠�
 set foldlevel=99                    "默认展开
 
 
-"======NERDTree======
-map <C-n> :NERDTreeToggle<CR>
-let NERDTreeIgnore=['\.pyc$', '\~$']
+"======UltiSnips======
+let g:UltiSnipsExpandTrigger="<C-j>"
+let g:UltiSnipsEditSplit="vertical"
+let g:UltiSnipsSnippetsDir="~/.vim/plugged/vim-snippets/UltiSnips"
 
 
 "======YouCompleteMe======
@@ -72,3 +76,8 @@ let g:ycm_extra_conf_vim_data = [
   \  'g:ycm_python_sys_path'
   \]
 let g:ycm_global_ycm_extra_conf = '~/.ycm_vimrc.py'
+
+
+"======NERDTree======
+map <C-n> :NERDTreeToggle<CR>
+let NERDTreeIgnore=['\.pyc$', '\~$']

@@ -55,11 +55,12 @@ set expandtab                       "用空格代替tab
 set tabstop=4                       "tab显示长度
 set softtabstop=4                   "编辑时tab和退格长度
 set shiftwidth=4                    "缩进长度
-"html, css, js, vim 缩进2格
+"下列格式缩进2格
 autocmd FileType html setlocal ts=2 sts=2 sw=2
 autocmd FileType css setlocal ts=2 sts=2 sw=2
 autocmd FileType javascript setlocal ts=2 sts=2 sw=2
 autocmd FileType vim setlocal ts=2 sts=2 sw=2
+autocmd FileType json setlocal ts=2 sts=2 sw=2
 
 set foldmethod=indent               "光标在缩进下方时用za命令折叠或展开代码
 set foldlevel=99                    "默认展开

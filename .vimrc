@@ -12,6 +12,7 @@ Plug 'SirVer/ultisnips'
 Plug 'iceskyzcl/vim-snippets'
 Plug 'Valloric/YouCompleteMe', {'do': 'python3 install.py'}
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
+Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-commentary'         "操作符gc 见`:h commentary`
 Plug 'tpope/vim-surround'           "操作符ys/ds/cs, 见`:h surround`
 Plug 'tpope/vim-repeat'             "使用.重复surround等插件命令

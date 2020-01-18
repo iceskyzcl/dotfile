@@ -6,10 +6,10 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.vim/plugged')
-Plug 'yianwillis/vimcdoc'           "VIM中文文档
-Plug 'w0rp/ale'                     "语法检查
+" Plug 'yianwillis/vimcdoc'           "VIM中文文档
+Plug 'dense-analysis/ale'                     "语法检查
 Plug 'SirVer/ultisnips'
-Plug 'iceskyzcl/vim-snippets'
+Plug 'honza/vim-snippets'
 Plug 'Valloric/YouCompleteMe', {'do': 'python3 install.py'}
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 Plug 'airblade/vim-gitgutter'

@@ -1,0 +1,12 @@
+flake8
+isort
+jupyterlab
+matplotlib
+nose
+numpy
+pandas
+Pillow
+requests
+scipy
+sympy
+yapf

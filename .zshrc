@@ -100,7 +100,10 @@ source $ZSH/oh-my-zsh.sh
 
 # My configurations
 alias ll='ls -alh'
-export PATH="$HOME/Library/Python/3.7/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
+
+# Homebrew Bottles source on USTC
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
 
 # pip zsh completion start
 function _pip_completion {
@@ -113,4 +116,3 @@ function _pip_completion {
 }
 compctl -K _pip_completion pip3
 # pip zsh completion end
-
